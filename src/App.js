@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -34,8 +34,6 @@ function App() {
                     </Switch>
 
                 </div>
-
-                <Footer />
 
             </Router>
         </div>

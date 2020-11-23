@@ -28,6 +28,13 @@ code {
     animation: spin 2s linear infinite;
 }
 
+.shadow-top {
+    box-shadow:
+        0 -6px 10px rgba(0, 0, 0, 0.07),
+        0 -10px 60px rgba(0, 0, 0, 0.035)
+    ;
+}
+
 @-webkit-keyframes spin {
     0% {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg);}

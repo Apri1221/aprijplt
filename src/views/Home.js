@@ -56,7 +56,7 @@ function Home() {
     } 
 
     return(
-        <div>
+        <div class="flex flex-col h-auto bg-white">
             <h1 className="font-bold text-2xl mb-3">For learning purpose, under development</h1>
             <br></br>
             {content}            
