@@ -1,9 +1,146 @@
 {
-    "posts":[
-      {
-        "id" : 0,
-        "title": "First post!",
-        "content" : "My first content!"
-      }
+    "products": [
+        {
+            "id": "1",
+            "createdAt": "2020-10-22T20:12:28.604Z",
+            "name": "Unbranded Metal Computer",
+            "material": "Metal",
+            "price": "286.00",
+            "description": "description 1"
+        },
+        {
+            "id": "2",
+            "createdAt": "2020-10-22T22:23:00.151Z",
+            "name": "Licensed Fresh Hat",
+            "material": "Metal",
+            "price": "876.00",
+            "description": "description 2"
+        },
+        {
+            "id": "3",
+            "createdAt": "2020-10-22T16:27:08.729Z",
+            "name": "Generic Rubber Soap",
+            "material": "Fresh",
+            "price": "0.00",
+            "description": "description 3"
+        },
+        {
+            "id": "4",
+            "createdAt": "2020-10-22T21:15:00.068Z",
+            "name": "Incredible Metal Sausages",
+            "material": "Granite",
+            "price": "209.00",
+            "description": "description 4"
+        },
+        {
+            "id": "5",
+            "createdAt": "2020-10-23T09:27:50.686Z",
+            "name": "Awesome Concrete Hat",
+            "material": "Plastic",
+            "price": "290.00",
+            "description": "description 5"
+        },
+        {
+            "id": "6",
+            "createdAt": "2020-10-23T09:57:56.923Z",
+            "name": "Small Rubber Cheese",
+            "material": "Fresh",
+            "price": "448.00",
+            "description": "description 6"
+        },
+        {
+            "id": "7",
+            "createdAt": "2020-10-23T11:00:14.435Z",
+            "name": "Incredible Cotton Bike",
+            "material": "Concrete",
+            "price": "772.00",
+            "description": "description 7"
+        },
+        {
+            "id": "8",
+            "createdAt": "2020-10-22T19:58:59.877Z",
+            "name": "Handmade Granite Bike",
+            "material": "Concrete",
+            "price": "140.00",
+            "description": "description 8"
+        },
+        {
+            "id": "9",
+            "createdAt": "2020-10-22T15:19:59.528Z",
+            "name": "Awesome Granite Shoes",
+            "material": "Wooden",
+            "price": "940.00",
+            "description": "description 9"
+        },
+        {
+            "id": "10",
+            "createdAt": "2020-10-23T00:10:06.991Z",
+            "name": "Handmade Metal Bacon",
+            "material": "Concrete",
+            "price": "409.00",
+            "description": "description 10"
+        }
+    ],
+    "images": [
+        {
+            "id": "1",
+            "productId": "1",
+            "createdAt": "2020-10-23T08:50:40.343Z",
+            "imageUrl": "http://loremflickr.com/640/480/technics"
+        },
+        {
+            "id": "2",
+            "productId": "2",
+            "createdAt": "2020-10-23T06:29:25.921Z",
+            "imageUrl": "http://loremflickr.com/640/480/business"
+        },
+        {
+            "id": "3",
+            "productId": "3",
+            "createdAt": "2020-10-23T05:43:15.955Z",
+            "imageUrl": "http://loremflickr.com/640/480/people"
+        },
+        {
+            "id": "4",
+            "productId": "4",
+            "createdAt": "2020-10-22T21:00:25.694Z",
+            "imageUrl": "http://loremflickr.com/640/480/abstract"
+        },
+        {
+            "id": "5",
+            "productId": "5",
+            "createdAt": "2020-10-23T02:42:52.650Z",
+            "imageUrl": "http://loremflickr.com/640/480/animals"
+        },
+        {
+            "id": "6",
+            "productId": "6",
+            "createdAt": "2020-10-22T15:31:08.004Z",
+            "imageUrl": "http://loremflickr.com/640/480/nightlife"
+        },
+        {
+            "id": "7",
+            "productId": "7",
+            "createdAt": "2020-10-23T04:32:21.377Z",
+            "imageUrl": "http://loremflickr.com/640/480/sports"
+        },
+        {
+            "id": "8",
+            "productId": "8",
+            "createdAt": "2020-10-23T00:10:04.797Z",
+            "imageUrl": "http://loremflickr.com/640/480/transport"
+        },
+        {
+            "id": "9",
+            "productId": "9",
+            "createdAt": "2020-10-22T22:44:13.427Z",
+            "imageUrl": "http://loremflickr.com/640/480/technics"
+        },
+        {
+            "id": "10",
+            "productId": "10",
+            "createdAt": "2020-10-22T14:30:25.893Z",
+            "imageUrl": "http://loremflickr.com/640/480/nightlife"
+        }
     ]
-  }
+}
