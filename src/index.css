@@ -30,8 +30,8 @@ code {
 
 .shadow-top {
     box-shadow:
-        0 -6px 10px rgba(0, 0, 0, 0.07),
-        0 -10px 60px rgba(0, 0, 0, 0.035)
+        0 -4px 10px rgba(0, 0, 0, 0.07),
+        0 -8px 50px rgba(0, 0, 0, 0.035)
     ;
 }
 
