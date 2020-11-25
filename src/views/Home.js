@@ -4,7 +4,8 @@ import Loader from '../components/Loader'
 import ProductCard from '../components/ProductCard';
 
 function Home() {
-    const url = 'https://5f674a3e38ce8700163984ae.mockapi.io/products';
+    // const url = 'https://5f674a3e38ce8700163984ae.mockapi.io/products';
+    const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@apriyantotobing';
 
     const [products, setProducts] = useState({
        loading: true,
@@ -16,9 +17,12 @@ function Home() {
 
     useEffect(() => {
         axios.get(url).then(response => {
+            let re = new RegExp('\\bimages\\b', 'g');
+            const posts = response.data.items.filter(item => item.thumbnail.match(re)); // That's the main trick* !
+
             setProducts({
                 loading: false,
-                data: response.data,
+                data: posts,
                 error: false,
             })
         }).catch(() => {
@@ -56,11 +60,10 @@ function Home() {
     } 
 
     return(
-        <div className="flex flex-col h-auto bg-white">
-            <h1 className="font-bold text-2xl mb-3">For learning purpose, under development</h1>
+        <div className="flex flex-col h-auto m-1 md:m-3">
+            <h1 className="font-bold text-2xl">For learning purpose, under development</h1>
             <br></br>
             {content}            
-            
         </div>
     )
 }

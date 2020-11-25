@@ -12,32 +12,31 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function ProductCard (props) {
     return (
-        <div className="border mb-4 p-4 rounded overflow-hidden">
-            <Link to={`/products/${props.product.id}`}>
-                <div style={{
-                    'backgroundImage': `url('${props.product.images[0].imageUrl}')`
-                }} className="w-full h-64 bg-blue bg-cover">
+        <article className="m-2 md:m-8 rounded-lg shadow-md overflow-hidden">
 
-                </div>
-            </Link>
-            <div className="p-3"></div>
-            <h1 className="text-xl font-bold mb-3">
-                <Link to={`/products/${props.product.id}`}>
-                    {props.product.name}
-                </Link>
-            </h1>
-            <div className="mb-3">
-                {props.product.price}
-            </div>
-            <Link to={`/products/${props.product.id}`} 
+            <a target="_blank" rel="noopener noreferrer" href={props.product.guid}>
+                <img className="block h-350 w-full border object-cover" src={props.product.thumbnail} alt={props.product.title}/>
+            </a>
+
+            <header className="flex items-center justify-between leading-tight p-2 md:p-4">
+                <h1 className="text-2xl font-bold mb-3">
+                    <a target="_blank" rel="noopener noreferrer" href={props.product.guid}>
+                        {props.product.title}
+                    </a>
+                </h1>
+                <p className="text-base">
+                    {props.product.pubDate}
+                </p>
+            </header>
+            <a target="_blank" rel="noopener noreferrer" href={props.product.guid} 
                 className="bg-blue-500 text-white p-2 flex justify-center">
                 View
-            </Link>
-        </div>
+            </a>
+
+        </article>
     )
 }
 

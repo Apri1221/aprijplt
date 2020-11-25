@@ -19212,6 +19212,10 @@ video {
   animation: bounce 1s infinite;
 }
 
+.h-350 {
+  height: 350px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
