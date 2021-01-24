@@ -34,7 +34,7 @@ function App() {
                         </Route>
 
                         {/* :id adalah wildcard */}
-                        <Route path="/products/:id">
+                        <Route path="/articles">
                             {loggedIn ? <About /> : <Redirect to="/login" />}
                         </Route>
 

@@ -4,13 +4,15 @@
             "id": "1",
             "username": "username",
             "password": "password",
+            "accountIg": "aprijplt",
             "createdAt": "2020-10-23T08:50:40.343Z",
             "imageUrl": "http://loremflickr.com/640/480/technics"
         },
         {
             "id": "2",
-            "username": "username2",
-            "password": "password2",
+            "username": "esmeralda",
+            "password": "aurelia",
+            "accountIg": "esmeraldatbn",
             "createdAt": "2020-10-23T06:29:25.921Z",
             "imageUrl": "http://loremflickr.com/640/480/business"
         }

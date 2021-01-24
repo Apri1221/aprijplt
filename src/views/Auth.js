@@ -30,6 +30,7 @@ function Login() {
         axios.get(url + `?username=${username}&password=${password}`).then(response => {
             if(response.status === 200) {
                 UserData.setName(username);
+                UserData.setAccountIG(response["data"]["accountIg"]);
                 Toast.fire({
                     icon: 'success',
                     title: 'Signed in successfully',

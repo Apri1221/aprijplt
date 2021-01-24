@@ -13,10 +13,27 @@ const UserData = (function () {
         sessionStorage.removeItem('username');
     }
 
+    let getAccountIG = function () {
+        // Or pull this from cookie/localStorage
+        return sessionStorage.getItem('accountIg') ? localStorage.getItem('accountIg') : '';
+    };
+
+    let setAccountIG = function (accountIg) {
+        // Also set this in cookie/localStorage
+        sessionStorage.setItem('accountIg', accountIg);
+    };
+
+    let deleteAccountIG = function () {
+        sessionStorage.removeItem('accountIg');
+    }
+
     return {
         getName: getName,
         setName: setName,
-        deleteName: deleteName
+        deleteName: deleteName,
+        getAccountIG: getAccountIG,
+        setAccountIG: setAccountIG,
+        deleteAccountIG: deleteAccountIG,
     }
 
 })();

@@ -18,6 +18,21 @@ function Header() {
             </div>
         </NavLink>
 
+    let buttonLogin =
+        <NavLink exact to='/login' className="text-gray-700 md:ml-0 ml-auto" activeClassName="text-blue-500 active">
+            <div className="px-3 cursor-pointer md:px-6 hover:bg-blue-200">
+                <div className="flex flex-col py-2 md:w-20">
+                    <div className="flex justify-center">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 25 25" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                        </svg>
+                    </div>
+                    <span className="font-semibold tracking-wide text-center capitalize anti-xsaliased md:text-base text-sm sm:subpixel-antialiased">login</span>
+                </div>
+            </div>
+        </NavLink>
+
     const loggedIn = UserData.getName() !== "" ? true : false;
 
 
@@ -70,7 +85,7 @@ function Header() {
                     </div>
                 </NavLink>
 
-                {loggedIn ? (buttonLogout) : ('')}
+                {loggedIn ? (buttonLogout) : (buttonLogin)}
             </nav>
         </header>
     )

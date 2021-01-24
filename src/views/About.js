@@ -1,11 +1,40 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import Loader from '../components/Loader';
+import UserData from '../services/Auth';
 
 
 function About() {
+    const accountIg = UserData.getAccountIG();
+    const url = `https://www.instagram.com/${accountIg}/?__a=1`;
+
+    const [profile, setProfile] = useState({
+        imageSrc: '', 
+    });
+ 
+    useEffect(() => {
+        axios.get(url).then(response => {
+            var photoURL = response["data"]["graphql"]["user"]["profile_pic_url_hd"];
+            setProfile({
+                imageSrc: photoURL
+            })
+        }).catch(() => {
+            setProfile({
+                imageSrc: "https://source.unsplash.com/400x400/?man,face"
+            })
+        });
+    }, [url]);
+
+    if (profile.imageSrc === '') {
+        return (
+            <Loader></Loader>
+        )
+    };
+
     return(
         <div className="flex flex-col items-center content-center justify-center">
             <div>
-                <img src="https://source.unsplash.com/400x400/?woman,face" alt="" className="w-64 h-64 m-5 rounded-full" />
+                <img src={profile.imageSrc} alt="" className="w-64 h-64 m-5 rounded-full" />
             </div>
 
             <div className="content-center w-full h-auto m-5 text-center ">
