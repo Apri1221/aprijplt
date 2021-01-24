@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Loader from '../components/Loader';
-import UserData from '../services/Auth';
 
 
 function About() {
-    const accountIg = UserData.getAccountIG();
+    const accountIg = sessionStorage.getItem('accountIg');
     const url = `https://www.instagram.com/${accountIg}/?__a=1`;
 
     const [profile, setProfile] = useState({

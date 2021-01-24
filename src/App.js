@@ -11,6 +11,7 @@ import About from './views/About';
 import Home from './views/Home';
 import { Auth } from './views/Auth';
 import UserData from './services/Auth';
+import Secret from './views/Secret';
 
 
 function App() {
@@ -27,15 +28,15 @@ function App() {
 
                     <Switch>
                         <Route exact path="/">
-                            <Home />
+                            {loggedIn ? <Redirect to="/secret" /> : <Home />}
                         </Route>
                         <Route path="/about">
                             <About />
                         </Route>
 
                         {/* :id adalah wildcard */}
-                        <Route path="/articles">
-                            {loggedIn ? <About /> : <Redirect to="/login" />}
+                        <Route path="/secret">
+                            {loggedIn ? <Secret /> : <Redirect to="/login" />}
                         </Route>
 
                         <Route path="/login">

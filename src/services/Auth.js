@@ -20,6 +20,7 @@ const UserData = (function () {
 
     let setAccountIG = function (accountIg) {
         // Also set this in cookie/localStorage
+        console.log(accountIg)
         sessionStorage.setItem('accountIg', accountIg);
     };
 

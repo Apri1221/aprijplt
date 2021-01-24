@@ -52,7 +52,7 @@ function Header() {
                     </div>
                 </NavLink>
 
-                <NavLink exact to="/articles" className="text-gray-700" activeClassName="text-blue-500 active">
+                <NavLink exact to="/secret" className="text-gray-700" activeClassName="text-blue-500 active">
                     <div className="px-3 cursor-pointer md:px-6 hover:bg-blue-200">
                         <div className="flex flex-col py-2 md:w-20">
                             <div className="flex justify-center">
@@ -64,7 +64,7 @@ function Header() {
                                     <line x1="13" y1="12" x2="15" y2="12" />
                                 </svg>
                             </div>
-                            <span className="font-semibold tracking-wide text-center capitalize anti-xsaliased md:text-base text-sm sm:subpixel-antialiased">articles</span>
+                            <span className="font-semibold tracking-wide text-center capitalize anti-xsaliased md:text-base text-sm sm:subpixel-antialiased">secret</span>
                         </div>
                     </div>
                 </NavLink>
