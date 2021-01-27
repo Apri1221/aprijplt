@@ -39,7 +39,7 @@ function Header() {
     return (
         <header>
             <nav id="anjay" className="fixed bottom-0 flex justify-center w-full bg-white shadow-top md:px-10 text-base">
-                <NavLink exact to="/" className="text-gray-700" activeClassName="text-blue-500 active">
+                <a href="/aprijplt" className="text-gray-700">
                     <div className="px-3 cursor-pointer md:px-6 hover:bg-blue-200">
                         <div className="flex flex-col py-2 md:w-20">
                             <div className="flex justify-center">
@@ -50,7 +50,7 @@ function Header() {
                             <span className="font-semibold tracking-wide text-center capitalize anti-xsaliased md:text-base text-sm sm:subpixel-antialiased">recents</span>
                         </div>
                     </div>
-                </NavLink>
+                </a>
 
                 <NavLink exact to="/secret" className="text-gray-700" activeClassName="text-blue-500 active">
                     <div className="px-3 cursor-pointer md:px-6 hover:bg-blue-200">

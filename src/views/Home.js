@@ -63,7 +63,8 @@ function Home() {
         <div className="flex flex-col h-auto m-1 md:m-3">
             <h1 className="font-bold text-2xl">For learning purpose, under development</h1>
             <br></br>
-            {content}            
+            {content}
+            <br></br>         
         </div>
     )
 }

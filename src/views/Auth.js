@@ -23,6 +23,7 @@ function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const url = 'https://my-json-server.typicode.com/apri1221/aprijplt/users';
+    
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -79,6 +80,8 @@ function Login() {
 
 function Logout() {
     UserData.deleteName();
+    UserData.deleteAccountIG();
+    UserData.setRedirect(0);
     Toast.fire({
         icon: 'success',
         title: 'Logout successfully',

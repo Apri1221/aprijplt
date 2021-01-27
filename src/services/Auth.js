@@ -28,6 +28,14 @@ const UserData = (function () {
         sessionStorage.removeItem('accountIg');
     }
 
+    let setRedirect = function(isRedirect) {
+        sessionStorage.setItem('redirect', isRedirect);
+    }
+
+    let getRedirect = function() {
+        return sessionStorage.getItem('redirect') || 0;
+    }
+
     return {
         getName: getName,
         setName: setName,
@@ -35,6 +43,8 @@ const UserData = (function () {
         getAccountIG: getAccountIG,
         setAccountIG: setAccountIG,
         deleteAccountIG: deleteAccountIG,
+        setRedirect: setRedirect,
+        getRedirect: getRedirect,
     }
 
 })();

@@ -3,7 +3,7 @@
   "description": "Personal Web Apriyanto JPL Tobing",
   "author": "Apri <apriyantotobing8@gmail.com>",
   "name": "aprijplt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -15,6 +15,7 @@
     "autoprefixer": "^9.8.6",
     "axios": "^0.20.0",
     "postcss-cli": "^7.1.1",
+    "query-string": "^6.13.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
