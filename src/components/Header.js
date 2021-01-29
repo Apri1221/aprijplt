@@ -38,7 +38,7 @@ function Header() {
 
     return (
         <header>
-            <nav id="anjay" className="fixed bottom-0 flex justify-center w-full bg-white shadow-top md:px-10 text-base">
+            <nav id="anjay" className="fixed bottom-0 flex justify-center w-full bg-white shadow-top md:px-10 text-base z-40">
                 <a href="/aprijplt" className="text-gray-700">
                     <div className="px-3 cursor-pointer md:px-6 hover:bg-blue-200">
                         <div className="flex flex-col py-2 md:w-20">
