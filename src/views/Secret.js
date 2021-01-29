@@ -96,16 +96,16 @@ function Secret() {
                 <div className="overflow-x-hidden">
                     <div className="grid grid-flow-col-dense grid-rows-2 md:grid-cols-2 grid-cols-1 gap-4 my-10">
                         <div className="transform -rotate-6">
-                            <div className="px-4"><img className="rounded shadow-xl object-cover w-48" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/foto_1.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_1.jpeg" alt=""/></div>
                         </div>
                         <div className="col-start-2 transform scale-75 rotate-6 translate-x-2 translate-y-15">
-                            <div className="px-4"><img className="rounded shadow-xl object-cover h-48" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/foto_2.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_2.jpeg" alt=""/></div>
                         </div>
                         <div className="transform translate-y-14 translate-x-20">
-                            <div className="px-4"><img className="rounded shadow-xl object-cover h-48" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/foto_3.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_3.jpeg" alt=""/></div>
                         </div>
                         <div className="row-start-1 col-start-2 col-span-2 transform translate-x-20 translate-y-4">
-                            <div className="px-4"><img className="rounded shadow-xl object-cover h-48" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/foto_4.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_4.jpeg" alt=""/></div>
                         </div>
                     </div>
                 </div>
