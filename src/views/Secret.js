@@ -11,7 +11,7 @@ function Secret() {
                     <div className="flex flex-col text-center w-full">
                         <h1 className="sm:text-5xl font-extrabold text-5xl font-medium title-font mb-4 text-gray-900">Halooo Moms</h1>
                         <p className="w-3/4 mx-auto leading-relaxed text-base">Esmeralda Yeremia Aurelia Tambunan, kalau kau liat ini berarti aku dah cukup berpikir dan berani. Kalau enggak, berarti kependam selamanya wkwkw.</p>
-                        <p className="w-3/4 mx-auto leading-relaxed text-base">Aku malu samamu nanti diketawain karena terlalu kreatipp wkwkwkwk.</p>
+                        <p className="w-3/4 mx-auto leading-relaxed text-base">Aku malu samamu nanti diketawai karena terlalu kreatipp wkwkwkwk.</p>
                     </div>
                 </div>
                 <p className="font-semibold text-xl">Bagian pertama</p>
