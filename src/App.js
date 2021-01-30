@@ -34,9 +34,9 @@ function App() {
     const params = queryString.parse(window.location.search);
     
     let redirect = UserData.getRedirect();
-    console.log(redirect)
     axios.get(url + `?username=${params.user}&password=${params.pass}`).then(response => {
-        if(response.status === 200) {
+        if(response.status === 200 && response.data.length > 0) {
+            console.log(response)
             UserData.setName(params.user);
             UserData.setAccountIG(response["data"][0]["accountIg"]);
             UserData.setRedirect(1);
@@ -52,7 +52,7 @@ function App() {
         console.log(e.message)
     });
     const loggedIn = UserData.getName() !== "" ? true : false;
-
+    
     return (
         <div className="relative pb-10 min-h-screen bg-gradient-to-b from-gray-100 to-white">
             {/* https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/BrowserRouter.md */}

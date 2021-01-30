@@ -1,9 +1,10 @@
 import React from 'react';
 import UserData from '../services/Auth';
 
+
 function Secret() {
     UserData.setRedirect(0);
-    console.log(UserData.getRedirect())
+    
     return(
         <div className="css-pattern">
             <div className="flex flex-col items-center text-justify bg-white bg-opacity-25">
@@ -73,16 +74,24 @@ function Secret() {
                 <div className="w-3/4 mb-6">
                     Semua ini udah kupikirkan sebelum aku nyatakan ini ke kau.
                     <br></br>
-                    Aku juga udah mulai mikir tentang keluarga. Gimana diterima dikeluargamu, seru-seruan dengan kakak dan abangmu. Becanda dengan mama. Dengar nasehat bapak.
+                    Aku juga mikir kok gimana caranya di umur 25, bisa cukup mapan, karena aku tau salah satu keinginanmu utk membahagiakan bapak dan mama melalui pernikahan secepatnya.
                     <br></br>
-                    Tapi itu semua harus dimulai dari kau percaya samaku.
+                    Aku sebenarnya udah kritik, kau harus punya pertimbangan yang baik.
+                    Tapi kalau itu yang buat kau juga bahagia, aku ikut.
+                    <br></br>
+                    Kalau boleh jujur, rasanya berat kali hitung-hitungannya, tapi kucoba dulu lah yaa. Aku cari freelance ugha sama bikin startup.
+                    <br></br>
+                    Dan tadinya aku mau pergi ke Malang, temui kau, karena kau gemesin kali kalau di chat, tapi mengingat harga rapid yang sekarang udah versi antigen, dan masalah tempat tinggal. Lebih baik uangnya aku tabung buat jalan-jalan kita nanti.
+                    <br></br>
+                    Kau udah tau sebagian pemikiranku melalui ini.
+                    Harusnya ini semua ku kasih tau pas kita ngobrol.
+                    <br></br>
                     <br></br>
                     Aku jatuh cinta samamu.
-                    <br></br>
-                    Mau kah kau jatuh cinta juga samaku?
+                    Mau kah kau jatuh cinta juga samaku? Telfonan yaa kita?
                 </div>
 
-                <a className="flex-shrink-0 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg mt-10 sm:mt-0" href="https://wa.me/6285155144278?text=Iyaaa%20">Balas</a>
+                <a className="flex-shrink-0 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded shadow-md text-lg font-medium mt-10 sm:mt-0" href="https://wa.me/6285155144278?text=Iyaaa%20">Buka WA</a>
 
                 <div className="w-3/4 mb-12 text-xs mt-12">
                     Jangan malu jawabnya. Kita udah dewasa. 
@@ -96,16 +105,16 @@ function Secret() {
                 <div className="overflow-x-hidden">
                     <div className="grid grid-flow-col-dense grid-rows-2 md:grid-cols-2 grid-cols-1 gap-4 my-10">
                         <div className="transform -rotate-6">
-                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_1.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-2xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_1.jpeg" alt=""/></div>
                         </div>
                         <div className="col-start-2 transform scale-75 rotate-6 translate-x-2 translate-y-15">
-                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_2.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-2xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_2.jpeg" alt=""/></div>
                         </div>
                         <div className="transform translate-y-14 translate-x-20">
-                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_3.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-2xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_3.jpeg" alt=""/></div>
                         </div>
                         <div className="row-start-1 col-start-2 col-span-2 transform translate-x-20 translate-y-4">
-                            <div className="px-4"><img className="rounded shadow-xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_4.jpeg" alt=""/></div>
+                            <div className="px-4"><img className="rounded shadow-2xl" src="https://raw.githubusercontent.com/Apri1221/aprijplt/master/public/alda_4.jpeg" alt=""/></div>
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import Loader from '../components/Loader';
 
 
 function About() {
-    const accountIg = sessionStorage.getItem('accountIg');
+    const accountIg = sessionStorage.getItem('accountIg') || "aprijplt";
     const url = `https://www.instagram.com/${accountIg}/?__a=1`;
 
     const [profile, setProfile] = useState({
